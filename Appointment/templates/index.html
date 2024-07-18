@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <center><img src="{% static 'img/s1.jpg' %}" class="d-block w-20" width="65.47%" height="10%"></center>
+        </div>
+        <div class="carousel-item">
+            <center><img src="{% static 'img/s2.jpg' %}" class="d-block w-20" width="55%" height="10%"></center>
+        </div>
+        <div class="carousel-item">
+            <center><img src="{% static 'img/s3.jpg' %}" class="d-block w-10" width="55%" height="10%"></center>
+        </div>
+        <div class="carousel-item">
+            <center><img src="{% static 'img/s4.jpg' %}" class="d-block w-10" width="55.52%" height="10%"></center>
+        </div>
+    </div>
+    <hr>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="false"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="center">
+                <div class="section-heading">
+                    <h1>
+                        <center>About Us</center>
+                    </h1>
+                </div>
+                <h5>
+                    <pre>
+                        Welcome to MD Polyclinic, where we prioritize your health with a range of services including
+                        general medicine and specialized care in cardiology,dermatology, pediatrics, orthopedics, 
+                        and gynecology. Our clinic offers comprehensivediagnostic services and our dedicated team of 
+                        doctors and nurses ensures personalized care and focuses on preventive health measures. Locat
+                        ed conveniently, weprovide flexible hours to accommodate your schedule. Experiencecompassionate 
+                         healthcare at MD Polyclinic, committed to keeping you and your family healthyand well.
+                        </pre>
+
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<section class="section" id="vision">
+    <div class="container">
+        <div class="row">
+            <div class="center">
+                <div class="section-heading">
+                    <h1>
+                        <center>Vision</center>
+                    </h1>
+                    <h5>
+                        <pre>
+                        At MD Polyclinic, we envision a healthcare center renowned for its commitment to excellence
+                        in patient care, innovation in medical technology, and compassionate service. Our goal is to
+                        lead in providing comprehensive healthcare solutions that prioritize patient well-being,
+                        supported by a team of dedicated professionals and state-of-the-art facilities. We strive to
+                        set new standards in medical practice, fostering a trusted environment where every patient
+                        receives personalized attention and optimal health outcomes. With a focus on continuous
+                        improvement and community health, MD Polyclinic aims to be the preferred choice for
+                        individuals seeking reliable and compassionate medical care in our region.
+                        </pre>
+
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="'section-header" id="department">
+    <center>
+        <h2>Departments</h2>
+    </center>
+</div>
+<section class="section" id="vision">
+    <div class="container">
+        <div class="row">
+            <div class="center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/Beautylogo.jpg' %}">
+                            <p></p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/General-Surgery.jpg' %}">
+                            <p>General Surgery</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/Motherbaby2.jpg' %}">
+                            <p>O.B.G Department</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/Pediatrician.jpg' %}">
+                            <p>Pediatrician</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/DentalBlue.jpg' %}">
+                            <p>Dental Department</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/Internist.jpg' %}">
+                            <p>Internist</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/optical.jpg' %}">
+                            <p>orthopedics</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/E.N.T.jpg' %}">
+                            <p>E.N.T</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/GP.jpg' %}">
+                            <p>G.P</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/ER-1.jpg' %}">
+                            <p>E.R</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/Laboratory-2.jpg' %}">
+                            <p>Laboratory</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="jumbotron">
+                            <img src="{% static 'img/xray-yellow-1.jpg' %}">
+                            <p>X-Ray</p>
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br><br>
+<div class="'section-header" id="doctors">
+    <center>
+        <h2>Our Doctors</h2>
+    </center>
+</div>
+<div class="container">
+    <div class="row">
+        {% for doctor in doctors %}
+        <div class="col-md-4">
+            <div class="jumbotron">
+                <div id="dataBox">
+                    <p><strong>Name:</strong>{{ doctor.doctor_name }} </p>
+                    <p><strong>Description:</strong> ({{ doctor.speciality }})</p>
+                    <a class="btn btn-info btn-lg" href="#" role="button">Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+
+{% endblock %}

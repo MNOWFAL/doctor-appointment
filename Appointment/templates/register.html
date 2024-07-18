@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Registration Form{% endblock %}
+
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css/register.css' %}"> -->
+{% endblock %}
+
+{% block content %}
+<section class="container1">
+    <header>Registration Form</header>
+    <!-- <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {% for fm in form %}
+        <div class="input-box">
+            {{ fm.label_tag }}
+            {{ fm.username.lable_tag }}
+        </div>
+
+        <div class="input-box">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+                {{ form.phone.label_tag }}
+                {{ form.phone }}
+            </div>
+            <div class="input-box">
+                {{ form.dateofbirth.label_tag }}
+                {{ form.dateofbirth }}
+            </div>
+        </div>
+        <div class="gender-box">
+            {{ form.gender.label_tag }}
+            {{ form.gender }}
+
+        </div>
+        <div class="input-box address">
+            {{ form.address.label_tag }}
+            {{ form.address }}
+
+            <div class="column">
+                {{ form.country.label_tag }}
+                {{ form.country }}
+
+                {{ form.city.label_tag }}
+                {{ form.city }}
+            </div>
+            <div class="column">
+                {{ form.state.label_tag }}
+                {{ form.state }}
+                {{ form.pincode.label_tag }}
+                {{ form.pincode }}
+
+            </div>
+            <div class="input-box address">
+                {{ form.password1.label_tag }}
+                {{ form.password1 }}
+
+            </div>
+            <div class="input-box address">
+                {{ form.password2.label_tag }}
+                {{ form.password2 }}
+
+            </div>
+        {% endfor %}
+        <input type="submit" value="Register">
+    </form> -->
+
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {% for fm in form %}
+        {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br><br>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+
+    .btn {
+        width: 100px;
+    }
+</style>
+<center>
+    <h1>Appointment Success</h1>
+</center>
+<br><br>
+<table class="container">
+    <tr>
+        <th>Doctor Name</th>
+        <th>Appointment Date</th>
+        <th>Token </th>
+        <th>Status</th>
+        <th>Payment</th>
+    </tr>
+    {% for appointment in appointments %}
+    <tr>
+        <td>{{appointment.name}}</td>
+        <td>{{appointment.app_date}}</td>
+        <td>{{appointment.token_no}}</td>
+        <td>{{appointment.status}}</td>
+        <td><a class="btn btn-warning" href="{% url 'patient:payment' %}" role="button">Pay</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+

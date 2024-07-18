@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<center>
+    <h1>Make Payment</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <script src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_1234567890"
+            data-amount="{{ payment.amount }}" data-currency="INR" data-order_id="{{ payment.id }}"
+            data-buttontext="Pay with Razorpay" data-name="Your Name" data-description="Test transaction" data-image=""
+            data-prefill.name="" data-prefill.email="" data-theme.color="#F37254"></script>
+        <input type="hidden" custom="Hidden Element" name="hidden">
+    </form>
+</center>
+
+{% endblock %}

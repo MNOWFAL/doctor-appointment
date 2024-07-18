@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<center>
+    <h1>Book an Appointment</h1>
+</center>
+<br><br>
+<div class="container">
+    <div class="row">
+        {% for doctor in doctors %}
+        <div class="col-md-4">
+            <div class="jumbotron">
+                <div id="dataBox">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <p><strong>Name: {{ doctor.doctor_name }}</strong></p>
+                        <p><strong>Description: {{ doctor.speciality }}</strong></p>
+                        <p><strong>Select Date:</strong> <input type="date" name="app_date"></p>
+                        <input type="hidden" name="doctor" value="{{ doctor.id }}">
+                        <input class="btn btn-warning btn-lg" type="submit" value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}x
